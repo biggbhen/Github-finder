@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background-color: #000;
@@ -39,6 +40,10 @@ body {
     height: 3rem;
     border-radius: 8px;
     background-color: #181a26;
+    border: 0;
+  }
+  input[type='text']:focus {
+    outline: none;
   }
   .githubProfile {
     border: 2px solid yellow;
