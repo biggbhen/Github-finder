@@ -4,10 +4,16 @@
   box-sizing: border-box;
   list-style: none;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 body {
   background-color: #000;
+}
+h2 {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+h3 {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
 }
 .container {
   max-width: 40rem;
@@ -109,6 +115,9 @@ body {
           width: 5%;
           font-size: 1rem;
           margin-right: 1rem;
+        }
+        span {
+          font-size: clamp(0.8rem, 1vw, 1rem);
         }
       }
     }
