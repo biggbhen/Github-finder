@@ -4,7 +4,8 @@ class UI {
       location = document.querySelector('.location'),
       website = document.querySelector('.website'),
       twitter = document.querySelector('.twitter'),
-      company = document.querySelector('.company');
+      company = document.querySelector('.company'),
+      profileImageLink = document.querySelector('.profile-link');
     userProfile.style.display = 'block';
     document.querySelector('.followers').textContent =
       data.profileData.followers;
@@ -15,6 +16,7 @@ class UI {
     document.querySelector('.profile-fullName').textContent =
       data.profileData.name;
     document.querySelector('.profileImage').src = data.profileData.avatar_url;
+    profileImageLink.href = `https://github.com/${data.profileData.login}`;
     document.querySelector('.profile-userName').textContent =
       data.profileData.login;
     document.querySelector('.timeCreated').textContent = new Date(
