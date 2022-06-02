@@ -28,12 +28,14 @@ class UI {
 
     if (data.profileData.blog !== '') {
       website.textContent = data.profileData.blog;
+      website.href = data.profileData.blog;
     } else {
       website.textContent = 'Not available';
     }
 
     if (data.profileData.twitter_username !== null) {
       twitter.textContent = data.profileData.twitter_username;
+      twitter.href = `https://twitter.com/${data.profileData.twitter_username}`;
     } else {
       twitter.textContent = 'Not available';
     }
