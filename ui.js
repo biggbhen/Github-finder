@@ -10,9 +10,11 @@ class UI {
       data.profileData.following;
     document.querySelector('.profile-fullName').textContent =
       data.profileData.name;
+    document.querySelector('.profileImage').src = data.profileData.avatar_url;
     document.querySelector('.profile-userName').textContent =
       data.profileData.login;
-    document.querySelector('.timeCreated').textContent =
-      data.profileData.updated_at;
+    document.querySelector('.timeCreated').textContent = new Date(
+      data.profileData.created_at
+    ).toLocaleDateString('en-US');
   }
 }

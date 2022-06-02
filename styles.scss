@@ -14,7 +14,7 @@ body {
   width: 90%;
   // height: 30rem;
   margin: 3rem auto 0 auto;
-  border: 2px solid red;
+  // border: 2px solid red;
   padding: 10px;
 
   header {
@@ -51,6 +51,7 @@ body {
     display: none;
     // border: 2px solid yellow;
     margin-top: 1rem;
+    border-radius: 8px;
     padding: 10px;
     background-color: #181a26;
     .profileDetails {
@@ -73,23 +74,25 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        border: 1px solid;
+        // border: 1px solid;
         width: 70%;
+        padding: 5px;
       }
     }
     .activity {
       padding: 10px;
       // border: 1px solid green;
-      margin-top: 1rem;
+      margin-top: 2rem;
       display: flex;
       justify-content: space-around;
+      border-radius: 8px;
+      background-color: #000;
       li {
-        width: 30%;
         // border: 1px solid purple;
         text-align: center;
         h3 {
           span {
-            margin-top: 0.4rem;
+            margin-top: 1rem;
             display: block;
           }
         }
