@@ -8,6 +8,7 @@ input.addEventListener('input', (e) => {
     github.getUser(user).then((data) => {
       if (data.profileData.message === 'Not Found') {
         // show alert
+        ui.showAlert();
       } else {
         // show user
         console.log(data);
@@ -16,6 +17,7 @@ input.addEventListener('input', (e) => {
     });
   } else {
     // clear profile
+    ui.clearProfile();
   }
   e.preventDefault();
 });
